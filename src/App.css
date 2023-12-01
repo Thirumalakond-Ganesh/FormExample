@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #D16BA5, #86A8E7,#5FFBF1);
+  color: white; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 400px;
+  margin: auto;
+  
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+form {
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  background: linear-gradient(to right, #e953a8, #D16BA5); 
   color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 170px;
 }
 
-.App-link {
-  color: #61dafb;
+button:disabled {
+  background-color: #dddddd;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-message {
+  color: #ff0000;
+  margin-top: 5px;
+}
+
+.form-state {
+  margin-top: 20px;
+}
+
+.watched-values {
+  margin-top: 20px;
 }
